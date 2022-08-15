@@ -1,0 +1,293 @@
+.img{
+    width: 100px;
+}
+.navbar{
+    background-color: bisque;
+}
+.navbar-nav{
+    margin-top: 20px;
+    /* margin-left: 30px; */
+}
+
+.dropdown-menu{
+    background-color: antiquewhite;
+}
+.input-group{
+    margin-top: 20px;
+}
+
+
+
+
+.root{
+    margin-top: 71px;
+    background-image: linear-gradient(to right,#FACD68 ,#FC76B3);
+    width: 100%;
+    height: 100%;
+    padding: 60px 20px;
+}
+
+
+
+
+
+.toop,.tooop{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.toop span{
+    line-height: 50px;
+    font-family: 楷体;
+    font-weight: 900;
+}
+
+.toop span:hover{
+    color: red;
+    cursor: pointer;
+}
+.toop h3{
+    font-family: 楷体;
+    font-weight: 900;
+}
+
+
+.tooop span{
+    line-height: 50px;
+    font-family: 楷体;
+    font-weight: 900;
+}
+
+.tooop span:hover{
+    color: red;
+    cursor: pointer;
+}
+.tooop h3{
+    font-family: 楷体;
+    font-weight: 900;
+}
+
+
+
+
+.ppic{
+    width: 20px;
+}
+.news-list{
+    background-color: #fff;
+    text-align: center;
+}
+.news-list h2{
+    color: #252525;
+    font-family: 楷体;
+}
+.news-text p{
+    word-break: break-all;
+    font-family: 楷体;
+    font-weight: 900;
+    font-size: 20px;
+}
+#myCarousel{
+    position: relative;
+}
+.carousel-indicators{
+    position: absolute;
+}
+.top-pad{
+    margin-top: 20px;
+}
+.caption{
+    text-align: center;
+}
+.thumbnail{
+    background-color: antiquewhite;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn p{
+    text-align: center;
+}
+.thumbnail:hover{
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.thumbnail:hover img{
+    transform: scale(1.1);
+}
+.thumbnail:hover .caption{
+    transform: scale(1.1);
+}
+.thumbnail img{
+    margin-top: 10px;
+}
+
+.caption p{
+    font-family: 楷体;
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.container .piv{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media screen and  (max-width: 768px) {
+    .piv{
+        display: none;
+    }
+   
+    
+}
+
+
+
+
+/* 书架资源 */
+.text-title{
+    font-weight: 600;
+    font-family: 楷体;
+    font-size:18px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* .carousel-inner .pic1{
+    height: 50px;
+}  */
+
+.text-title .ppic{
+    width: 15px;
+}
+
+
+
+.thumbnail:hover .btn span{
+    color: red;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .xuanyi_one{
+        display: none;
+    }
+    
+}
+
+.more{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.rootbox{
+    margin-top: 20px;
+    background-image: linear-gradient(to right,#FACD68 ,#FC76B3);
+    width: 100%;
+    height: 100%;
+    /* padding: 20px 0px; */
+
+    
+}
+/*  下轮播*/
+#carousel-example-generic {
+    height: 300px;
+    width: 200px;
+    margin: 0 auto;
+    /* transform: translate(-50%);
+    position: absolute; */
+}
+/* 修改轮播图片大小 */
+#carousel-example-generic .carousel-inner>.item>img {
+    /* display: block; */
+    width: 100%;
+    height: 300px;
+    
+}
+
+
+.rootbox .col-md-12 > .pic1{
+    display: block;
+    margin: auto;
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .rootbox{
+        display: none;
+    }
+    
+}
+
+
+/* @media screen and (max-width: 768px) {
+    .goTop{
+        display: none;
+    }
+    
+    
+} */
+
+.goTop {
+    background-color: #FACD68;
+    height: 30px;
+    width: 30px;
+    position: sticky;
+    left:1450px;
+    bottom: 100px;
+    display: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+
+}
+.goTop:hover{
+    background-color: red;
+}
+.goTop img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+/*微信公众号  */
+.img1{
+    width: 300px;
+}
+
+
+
+
+.footer{
+    background-color: bisque;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+.footer .ttext{
+    font-weight: 900;
+}
+
+

@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>、
+    <!-- <script src="./js/bootstrap.js"></script> -->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <img src="./logo.png" alt="" class="img" />
+          <button class="navbar-toggle collapsed"data-toggle="collapse"data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#">首页 <span class="sr-only">(current)</span></a>
+            </li>
+            <li><a href="#">全网</a></li>
+
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >分类 <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#xuanhuan">玄幻</a></li>
+                <li><a href="#aiqing">爱情</a></li>
+                <li><a href="#xiuzhen">修真</a></li>
+                <li><a href="#youxi">游戏</a></li>
+                <li><a href="#wuxia">武侠</a></li>
+                <li><a href="#tuili">推理</a></li>
+                <li><a href="#lishi">历史</a></li>
+                <li><a href="#kehuan">科幻</a></li>
+                <li><a href="#xuanyi">悬疑</a></li>
+                <li><a href="#junshi">军事</a></li>
+              </ul>
+            </li>
+            <li><a href="#">书架</a></li>
+            <li><a href="#">收藏</a></li>
+            <li><a href="#">我的书架</a></li>
+          </ul>
+          <div class="adapter">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">登录</a></li>
+              <li><a href="#">注册</a></li>
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >个人中心 <span class="caret"></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">个人信息</a></li>
+                  <li><a href="#">账号信息</a></li>
+                  <li><a href="#">修改信息</a></li>
+                  <li><a href="#">退出登录</a></li>
+                  <li><a href="#">注销账号</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="输入你想要的资源"
+                />
+                <span class="btn btn-default input-group-addon">搜索</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 上轮播图 -->
+    <div class="root">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 col-sm-12 col-xs-12">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  class="active"
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="pic" src="./上轮播/5.jpg" alt="" />
+                </div>
+                <div class="item">
+                  <img class="pic" src="./上轮播/8.jpg" alt="" />
+                </div>
+                <div class="item">
+                  <img class="pic" src="./上轮播/7.jpg" alt="" />
+                </div>
+                <div class="item">
+                  <img class="pic" src="./上轮播/6.jpg" alt="" />
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="news-list">
+              <h2>HappyBook</h2>
+
+              <div class="news-text">
+                <p>
+                  全网最全的小说，全网最全的听书，拥有多种方式传递快乐，致力于年轻人的闲暇生活。你开心的时候我在，你伤心的时候我还在，无论天涯还是海角，我都在。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 内容精选 -->
+    <div class="container top-pad">
+      <div class="toop">
+        <h3>精选小说</h3>
+        <span>查看更多<img src="./更多.png" alt="" class="ppic" /></span>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="thumbnail">
+            <img src="./精品资源/1.jpg" alt="" />
+            <div class="caption">
+              <p>快穿：拿下美强惨反派的 100 种方式</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="thumbnail">
+            <img src="./精品资源/2.jpg" alt="" />
+            <div class="caption">
+              <p>空间农女:七岁公主带领全村致富</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="thumbnail">
+            <img src="./精品资源/3.jpg" alt="" />
+            <div class="caption">
+              <p>哥哥的小青梅奶凶奶凶的</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="thumbnail">
+            <img src="./精品资源/4.jpg" alt="" />
+            <div class="caption">
+              <p>农家俏寡妇：给五个孩子当娘</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 展示图 -->
+    <div class="container">
+      <div class="col-md-12">
+        <img src="./展示.gif" alt="" class="piv" />
+      </div>
+    </div>
+
+    <!-- 书架资源展示 -->
+
+    <div class="container">
+      <div class="tooop" id="xuanyi">
+        <h3>书架资源</h3>
+        <!-- <span>查看更多<img src="./更多.png" alt="" class="ppic"></span> -->
+      </div>
+
+      <div class="text-title" >
+        <span>悬疑</span>
+        <span>查看更多<img src="./更多.png" alt="" class="ppic" /></span>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail xuanyi">
+            <img src="./悬疑/仙诡悬疑.jfif" alt="" />
+            <div class="caption">
+              <p>仙诡异道</p>
+            </div>
+            <button type="button" class="btn btn-default btn-warning" data-container="body" data-toggle="popover" data-placement="bottom" data-content="张土德病了，病的很重，得了病的他经常幻想自己来到了一个诡异的世界，直到有一天，他发现那并不是幻想.....
+            道诡异仙同人">
+              <span>小说详情</span> 
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail xuanyi">
+            <img src="./悬疑/白事邮局悬疑.jfif" alt="" />
+            <div class="caption">
+              <p>白事邮局</p>
+            </div>
+            <button type="button" class="btn btn-default btn-warning" data-container="body" data-toggle="popover" data-placement="bottom" data-content="咚咚咚~
+            “您好，您的快递！”
+            “请签字领取，麻烦给个好评哟~亲~”
+            道诡异仙同人">
+              <span>小说详情</span> 
+          </button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail xuanyi_one">
+            <img src="./悬疑/术法书册.jfif" alt="" />
+            <div class="caption">
+              <p>术法书册</p>
+            </div>
+            <button type="button" class="btn btn-default btn-warning" data-container="body" data-toggle="popover" data-placement="bottom" data-content="法不可轻传，术也可通神。
+            　　这是一本讲述各种奇诡之术，修炼之法的故事。
+            　　这是一本由拥有术法的人，奇异能力的妖，带有怨念的灵，可怕的“神”，交织而成的故事。
+            　　江凡觉醒神通“无字书册”，可以刻录各种术法技能。
+            　　推衍，纸扎，符箓，阵法……种种术法手段，在故事中一一展现。
+            　　都市背景，代入感强烈，感兴趣的小伙伴快上车。
+            道诡异仙同人">
+              <span>小说详情</span> 
+          </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-title" id="junshi">
+        <span>军事</span>
+        <span>查看更多<img src="./更多.png" alt="" class="ppic" /></span>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail xuanyi">
+            <img src="./军事/迷踪.jfif" alt="" />
+            <div class="caption">
+              <p>迷踪</p>
+            </div>
+            <button type="button" class="btn btn-default btn-warning" data-container="body" data-toggle="popover" 
+            data-placement="bottom" 
+            data-content="不要和我说谎，我能够闻到你身上间谍的味道——孟绍原。
+            一个微表情专家，他确定，自己能够改变很多东西。">
+              <span>小说详情</span> 
+          </button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail xuanyi">
+            <img src="./军事/士兵突击.jfif" alt="" />
+            <div class="caption">
+              <p>士兵突击</p>
+            </div>
+
+              <button type="button" class="btn btn-default btn-warning" 
+              data-container="body" data-toggle="popover" data-placement="bottom" 
+              data-content="当林锋带着系统，重生穿越到士兵突击的世界，他表示：我是钢七连第四千九百四十一个兵。
+              不抛弃也不放弃，钢七连的精神永不磨灭。">
+              <span>小说详情</span> 
+            </button>
+           
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail xuanyi_one">
+            <img src="./军事/我在亮剑.jfif" alt="" />
+            <div class="caption">
+              <p>我在亮剑</p>
+            </div>
+            <button type="button" class="btn btn-default btn-warning" data-container="body" 
+            data-toggle="popover" data-placement="bottom" data-content="特种兵岳峰携带军火系统，魂穿亮剑世界，成了新一团的一名排长。
+            李云龙：我想要美式装备！
+            岳峰：团长，咱有！
+            赵刚：我要组建一个狙击小队，可是没有狙击枪呀。
+            岳峰：政委，咱有！
+            旅长：李云龙，听说你发财了？
+            李云龙：旅长，没错，这是三千支歪把子，全上缴！
+            “呦呵？你们新一团什么时候这么阔了？”
+            “嗨，这不是有岳峰在管后勤嘛！”">
+              <span>小说详情</span> 
+          </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 展示收缩 -->
+
+
+      <!-- 有小说的声音 -->
+        
+       
+    
+      <div class="som-collapse">
+        <div class="text-title " id="kehuan">
+          <span>科幻</span>
+          <span>查看更多<img src="./更多.png" alt="" class="ppic" /></span>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi">
+              <img src="./科幻/地球基因.jfif" alt="" />
+              <div class="caption">
+                <p>地球基因</p>
+              </div>
+
+              <button type="button" class="btn btn-default btn-warning" data-container="body" data-toggle="popover" 
+              data-placement="bottom" 
+              data-content="带着进化游戏中的生物编辑器，穿越到不死者、神话生物出没的未来赛博世界，成为朝不保夕的贫民。
+              面对拥有超凡力量的恐怖敌人，组合亿万种普通生物基因，打造最强地球生物形态，硬钢神话生物！
+              棘皮、脊椎、节肢、软体……裸子、被子、真菌……">
+                <span>小说详情</span> 
+            </button>
+
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi">
+              <img src="./科幻/超时空科幻.jfif" alt="" />
+              <div class="caption">
+                <p>超时空</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" 
+              data-container="body" data-toggle="popover" data-placement="bottom" 
+              data-content="一起神秘的谋杀案让S.C.I异能犯罪调查局介入调查，将徐灿作为犯罪嫌疑人逮捕归案。
+              “我的超能力是……”
+              “时空穿越。”
+              徐灿戴着手铐，在审讯室内抬起头，缓缓说道。
+              ……
+              异能犯罪调查局，异能组织，诡异莫测的异能罪犯……
+              机缘之下，徐灿走进了异能者的世界。
+              隐藏在历史与未来中的战争，终于拉开了帷幕……">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi_one">
+              <img src="./科幻/我能往返未来科幻.jfif" alt="" />
+              <div class="caption">
+                <p>我能往返未来</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" data-container="body" 
+              data-toggle="popover" data-placement="bottom" data-content="　　千年之后，人类文明被妖兽所覆灭。
+              而获得了往返未来能力的昂子期，开始了自己的救世主生涯。
+              “来自千年以后，被无数优秀的人类天才改版过的基础呼吸法，修炼效果嘎嘎强！”
+              “这是未来的炼体药剂配方，普及下去，全部人类的身体素质再上一个层次！”
+              “未来的武技，一拳一个妖兽……”
+              “未来的科研方向，听我的朝着这个方向研究准没错！”
+              “……”
+              “什么？这样了还打不过！那我多辛苦自己多搬几次！”
+              “等我下次过来的时候，人类胜利的旗帜必将会插在你们妖兽的圣山之上！”">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="text-title" id="lishi">
+          <span>历史</span>
+          <span>查看更多<img src="./更多.png" alt="" class="ppic" /></span>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi">
+              <img src="./历史/从课本走向历史.jfif" alt="" />
+              <div class="caption">
+                <p>从课本走向历史</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" data-container="body" data-toggle="popover" 
+              data-placement="bottom" 
+              data-content="一不留神，穿越到了语文书那一篇篇学过的课文之中，这是一种怎样的奇妙之旅啊！">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi">
+              <img src="./历史/唐人的餐桌.jfif" alt="" />
+              <div class="caption">
+                <p>唐人的餐桌</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" 
+              data-container="body" data-toggle="popover" data-placement="bottom" 
+              data-content="天下人，天下事，都不过是我大唐人餐桌上的一道道菜肴。
+              虽然原始的食材便具有食物原始的风情，云初还是认为，最美味的食物还是需要经过分割，烹调，处置，最后端上桌的食物才是最符合大唐人肠胃的食物。
+              清蒸，红烧，爆炒，炖煮……天下有多少事，庖厨便有多少种烹调手段。
+              不论是高句丽，突厥，吐蕃，吐谷浑，薛延陀，铁勒……还是长鲸，猛虎，巨鲨，饿狼，在大唐这个熔炉铁锅里都能烹调出绝世美味……
+              再加上李治，武瞾，长孙无忌，褚遂良，李绩，程咬金等等绝世调料，不论是色香味总会有一样让你难以忘怀。
+              云初希望这样的豪华宴会上，绝对应该有自己的一个座位 ！
+              现如今，美味已经烹调完毕——云初铺好餐巾，拿起割鹿刀，双眼微闭，准备享受一顿前所未有的大餐，以满足自己饥渴的肠胃。">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi_one">
+              <img src="./历史/唐砖.jfif" alt="" />
+              <div class="caption">
+                <p>唐砖</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" data-container="body" 
+              data-toggle="popover" data-placement="bottom" data-content="梦回长安，鲜血浸染了玄武门，太极宫的深处只有数不尽的悲哀，民为水，君为舟，的朗朗之音犹在长安大地回绕，异族的铁蹄却再一次踏破了玉门关，此恨何及？
+              坟墓里的李世民眼见子民涂炭，该发出怎样的怒号？栏杆拍遍，只能见九州陆沉！
+              胸中也充满郁闷之气，恨不能跨越历史长河，摘飞星，揽日月，让乾坤倒转。
+              也罢，耳听得窗外鬼鸣啾啾，秋雨婆娑，剪一枝秃笔，为李唐盛世延篇，去掉阴暗的部分，我的大唐没有悲哀，只有金戈铁马的豪情，气吞日月的帝王，百战浴血的猛将，高冠博带的高士，温婉贤淑的皇后，父慈子孝，盛世延绵，这是我的大唐，我的《唐砖》。">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="text-title" id="xianxia">
+          <span>仙侠</span>
+          <span>查看更多<img src="./更多.png" alt="" class="ppic" /></span>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi">
+              <img src="./仙侠/白蛇仙侠.jfif" alt="" />
+              <div class="caption">
+                <p>白蛇传</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" data-container="body" data-toggle="popover" 
+              data-placement="bottom" 
+              data-content="夏渡秋穿越修仙界，为延寿拍剧，多年以后……
+              妖族大圣齐聚一堂，追剧《西游记之大闹天宫》。
+              得道高僧法海，总被不明人士毒打。
+              龙宫宝库成为了观光地，来者与龙王讨要定海神针。
+              终于有一天，夏渡秋脚踏太极图，身披山河社稷图，右手持诛仙剑，左手金箍棒，衣服是八卦仙衣，腰间挂斩仙飞刀，脖子上挂落宝金钱.........
+              “贫道欲证人仙，在此渡劫大乘！”">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi">
+              <img src="./仙侠/贞观仙王.jfif" alt="" />
+              <div class="caption">
+                <p>贞观仙王</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" 
+              data-container="body" data-toggle="popover" data-placement="bottom" 
+              data-content="贞观十四年，大唐盛世已开启。
+              唐高宗还是老实的小王爷。
+              女皇已入宫成了武才人。
+              翼国公府，秦琼刚加冠长子秦怀道，开启大唐封王生涯！">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi_one">
+              <img src="./仙侠/金莲.jfif" alt="" />
+              <div class="caption">
+                <p>我有金莲得机缘</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" data-container="body" 
+              data-toggle="popover" data-placement="bottom" data-content="二品灵根的天才秦元，进阶筑基失败，却得到异宝金莲。
+              从此，有无限机缘。">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="text-title" id="xuanhuan">
+          <span>玄幻</span>
+          <span>查看更多<img src="./更多.png" alt="" class="ppic" /></span>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi">
+              <img src="./玄幻/敕封万物玄幻.jfif" alt="" />
+              <div class="caption">
+                <p>敕封万物</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" data-container="body" data-toggle="popover" 
+              data-placement="bottom" 
+              data-content="天崩地坏，诡异暗藏，人如鸿毛，命若野草。
+              世界怪诞而危险，你握紧长刀，天道敕封，普通铁刀变成了玄铁宝刀；
+              黑暗中邪魔呢喃低语，你购得一枚换血大丹，敕封之下，换血大丹化为脱胎换骨金丹；
+              恐怖和疯狂在蔓延肆虐，你费尽心思得来一本炼体玄功《不坏金刚》，连续敕封三次，秘籍变为了《大自在不朽天王经》......
+              一切恐怖、威胁、压迫、不公，逐渐匍匐于你脚下。">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi">
+              <img src="./玄幻/简单练个武玄幻.jfif" alt="" />
+              <div class="caption">
+                <p>简单练个武</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" 
+              data-container="body" data-toggle="popover" data-placement="bottom" 
+              data-content="【九阳神功简化中，简化成功】
+              【九阳神功＝晒太阳】
+              宁修看着外面的太阳，陷入了沉思。
+              他走到太阳底下。
+              【真气+1】【真气+1】
+              【恭喜宿主晋级九品武者】
+              宁修摇了摇头，不禁感慨，“原来练武居然这么简单，不就是晒个太阳的事嘛。”
+              从此以后，宁修在武道之路彻底狂奔。
+              【赤砂掌＝搓沙】
+              【养气丹＝枸杞】
+              【金钟罩＝挨打】
+              【百步杀拳＝快速冲拳】
+              【龙象大力＝俯卧撑】
+              几年后，宁修力压天下，被誉为武道神话，回忆往昔，他再次感慨，“我只是简简单单练了个武，怎么就天下无敌了呢？”">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail xuanyi_one">
+              <img src="./玄幻/破日玄幻.jfif" alt="" />
+              <div class="caption">
+                <p>破日</p>
+              </div>
+              <button type="button" class="btn btn-default btn-warning" data-container="body" 
+              data-toggle="popover" data-placement="bottom" data-content="烈日破碎，黑潮之下，苍茫大地，蚀魇横行，这是一个凶险的世界。
+              讲述一个新时代社畜，穿越到这样的世界，凭着身上神秘的“十字光痕”，艰难求存的故事。">
+                <span>小说详情</span> 
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container more">
+        <button class="btn-toggle btn-warning collapsed xixi "data-toggle="collapse"data-target=".som-collapse" >
+          查看更多>>
+        </button>
+        
+      </div>
+     
+    </div>
+
+
+       <!-- 下轮播 -->
+    <div class="rootbox">
+      <div class="container" id="abc">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  class="active"
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                ></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner ">
+                <div class="item active " >
+                  <img class="pic1 center-block" src="./下轮播/1.webp" />
+                </div>
+                <div class="item" style="text-align: center;">
+                  <img class="pic1" src="./下轮播/2.webp"   />
+                </div>
+                <div class="item" style="text-align: center;">
+                  <img class="pic1" src="./下轮播/3.webp"  />
+                </div>
+                <div class="item" style="text-align: center;">
+                  <img class="pic1" src="./下轮播/4.webp" />
+                </div>
+              </div>
+            </div>
+      </div>
+        
+    </div>
+
+     
+      <!-- 添加说书 -->
+    <div class="container">
+      <div class="tooop" id="xuanyi">
+        <h3>欢乐听书</h3>
+        <!-- <span>查看更多<img src="./更多.png" alt="" class="ppic"></span> -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail xuanyi">
+            <img src="./悬疑/仙诡悬疑.jfif" alt="" />
+            <div class="caption">
+              <p>仙诡异道</p>
+            </div>
+            <button type="button" class="btn btn-default btn-warning xixi" data-container="body" data-toggle="popover" data-placement="bottom" onclick="play()">
+              <span>舒心醉</span> 
+            </button>
+            <audio src="./DJ OKAWARI - Flower Dance.flac" id="music"></audio>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail xuanyi">
+            <img src="./悬疑/仙诡悬疑.jfif" alt="" />
+            <div class="caption">
+              <p>仙诡异道</p>
+            </div>
+            <button type="button" class="btn btn-default btn-warning xixi" data-container="body" data-toggle="popover" data-placement="bottom" onclick="play()">
+              <span>舒心醉</span> 
+            </button>
+            <audio src="./DJ OKAWARI - Flower Dance.flac" id="music"></audio>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail xuanyi">
+            <img src="./悬疑/仙诡悬疑.jfif" alt="" />
+            <div class="caption">
+              <p>仙诡异道</p>
+            </div>
+            <button type="button" class="btn btn-default btn-warning xixi" data-container="body" data-toggle="popover" data-placement="bottom" onclick="play()">
+              <span>舒心醉</span> 
+            </button>
+            <audio src="./DJ OKAWARI - Flower Dance.flac" id="music"></audio>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+
+<!-- 
+    <footer class="panel-footer navbar-inverse navbar" style="width: 100%; overflow: hidden;">
+        <div class="container">
+            <div class="row footer-top" style="text-align: center;">
+               
+                <img src="./微信公众号.png" class="img1">
+                <div class="ttext">磊.小说架是致力于年轻人放松的平台。</div>
+            </div>
+          </div>
+    </footer> -->
+
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <img src="./微信公众号.png" alt="" class="img1">
+            <div class="ttext">磊.小说架是致力于年轻人放松的平台。</div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <img src="./微信公众号.png" alt="" class="img1">
+            <div class="ttext">磊.小说架是致力于年轻人放松的平台。</div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <img src="./微信公众号.png" alt="" class="img1">
+            <div class="ttext">磊.小说架是致力于年轻人放松的平台。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="goTop">
+      <img src="./回到顶部.png" alt="">
+    </div>
+
+     
+
+    
+
+
+    <script>
+      // 轮播图
+      $("#myCarousel").carousel({
+        interval: 2000,
+      });
+
+      // 点击出展示小说介绍
+
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+
+
+
+// 按钮控制小说声音的暂停开始
+
+      function play(){
+          //获取到你所定义的音频标签
+          var audios = document.getElementById("music");
+          //获取到img标签
+          var xixi = document.querySelector(".xixi");
+          //判断音频是否停止
+          if(audios.paused){
+              //如果已停止则播放音频并更换图标
+              // xixi.src = "imgs/musicBtn.png";
+
+              audios.play();
+          }else{
+              //如果已停止重新加载音频并关闭音频和更换图标
+              // xixi.src = "imgs/musicBtnOff.png";
+              audios.pause();
+
+              audios.load();
+          }
+        }
+
+// 回到顶部
+        // var goTop = document.querySelector('.goTop');
+        // console.log(goTop);
+
+        // var isTop = true;
+
+   
+        // window.onscroll = function(){
+        //   var scrollTop = document.body.scrollTop ||  document.documentElement.scrollTop;
+        //   console.log(scrollTop);
+        //   if(scrollTop >100){
+        //     goTop.style.display = 'block';
+        //   }else{
+        //     goTop.style.display = 'none';
+        //   }
+          
+
+
+        //   goTop.onclick = function(){
+        //   var timer = setInterval(function(){
+        //     if(!isTop){
+        //       clearInterval(timer);
+        //     }else{
+        //       isTop = false;
+        //     }
+        //     scrollTop-=20;
+        //     if(scrollTop<0){
+        //       scrollTop = 0;
+        //       clearInterval(timer);
+        //     }
+        //     document.body.scrollTop = scrollTop;
+        //     document.documentElement.scrollTop = scrollTop;
+        //     isTop = true;
+
+        //   },30);
+        // }
+        // }
+
+
+// 回到顶部
+      
+        window.onload = function() {
+            //获取回到顶部的按钮
+            var goTop = document.querySelector('.goTop');
+            console.log('goTop');
+            var timer = null;
+ 
+            // 标识是否清除定时器，为了实现在回到顶部的过程中通过滚动一下鼠标实现清除定时器从而达到滚动的目的
+            var isTop = true;
+
+            window.onscroll = function() {
+                // 让返回顶部按钮在第二屏才开始出现
+                var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+                if (osTop >= 100) {
+                  goTop.style.display = 'block';
+                } else {
+                  goTop.style.display = 'none';
+                }
+
+                if (!isTop) {
+                    clearInterval(timer);
+                }
+                isTop = false;
+            }
+ 
+            goTop.onclick = function() {
+                // 设置定时器
+                timer = setInterval(function() {
+                    // 获取滚动条距离顶部的高度
+                    var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+                    // 越滚越慢，设置成负数是为了防止减不到0
+                    var ispeed = Math.floor(-osTop / 6);
+                    document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed ;
+                    isTop = true; // 这里记得设置，不然滚一次就停止了
+                    if (osTop == 0) {
+                        clearInterval(timer);
+                    }
+                }, 100);
+            };
+        }
+
+        
+
+        
+        
+
+
+    </script>
+  </body>
+</html>
